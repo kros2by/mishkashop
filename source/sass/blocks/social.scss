@@ -1,0 +1,30 @@
+.social__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  min-height: 77px;
+  width: 140px;
+}
+
+.social__item {
+  width: 30px;
+  height: 20px;
+}
+
+.social__link-icon {
+  color: hsl(345, 6%, 13%);
+}
+
+.social__link-icon:hover {
+  color: hsl(171, 50%, 52%);
+}
+
+.social__link-icon:active {
+  opacity: 0.5;
+}
+
+

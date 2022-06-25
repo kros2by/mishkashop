@@ -1,0 +1,39 @@
+.bonus-list {
+  display: none;
+}
+
+.bonus-list__item:hover {
+  opacity: 0.6;
+}
+
+.bonus-list__item:active {
+  opacity: 0.3;
+}
+
+@media (min-width: $desktop-width) {
+  .bonus-list {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+    margin: 0;
+    margin-top: 19px;
+    padding: 0;
+    padding-left: 50px;
+    order: 2;
+    max-width: 600px;
+  }
+
+  .bonus-list__item {
+    margin-bottom: 19px;
+  }
+
+  .bonus-list__link {
+    color: hsl(0, 0%, 0%);
+    text-decoration: none;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-right: 62px;
+  }
+}

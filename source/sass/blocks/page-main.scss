@@ -1,0 +1,21 @@
+.page-main {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main {
+    top: 1px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__title {
+    padding: 157px 225px 355px 225px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+}

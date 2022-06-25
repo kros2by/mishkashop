@@ -1,0 +1,158 @@
+.page {
+  max-width: 1150px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.page__body{
+  background-color: #ffffff;
+  color: hsl(0, 0%, 0%);
+  margin: 0;
+  min-width: 320px;
+  min-height: 100%;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  align-items: center;
+}
+
+.page-header {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.page-header__wrapper {
+  max-width: 1150px;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media (max-width: $mobile-width-only) {
+  .page-header__wrapper {
+    min-height: 80px;
+  }
+}
+
+.page-header__logo {
+  max-height: 79px;
+  min-width: 260px;
+  text-align: center;
+  margin-top: 22px;
+  margin-bottom: 16px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.page-header__logo:hover {
+  opacity: 0.5;
+}
+
+.page-header__logo:active {
+  opacity: 0.3;
+}
+
+.page-header__text {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    flex-direction: row;
+  }
+
+  .page-header::after {
+    position: absolute;
+    content: "";
+    background-color: #fafafa;
+    width: 100%;
+    height: 100%;
+    top: 88px;
+    left: 0;
+    z-index: 0;
+  }
+
+  .page-header--color::after {
+    position: absolute;
+    content: "";
+    background-color: hsl(0, 0%, 95%);
+    width: 100%;
+    height: 100%;
+    top: 88px;
+    left: 0;
+    z-index: 0;
+  }
+
+  .page-header::before {
+    position: absolute;
+    content: "";
+    background-color: hsl(0, 0%, 93%);
+    width: 100%;
+    height: 1px;
+    top: 87px;
+    left: 0;
+    z-index: 1;
+  }
+
+  .page-header__logo {
+    min-height: 67px;
+    margin: 0;
+    padding-left: 50px;
+    padding-right: 0;
+    padding-top: 22px;
+    text-align: start;
+    min-width: 321px;
+  }
+
+  .page-header__logo-image {
+    height: auto;
+    width: 113px;
+  }
+
+  .page-header__text {
+    display: block;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    margin: 0;
+    order: 2;
+    padding-right: 50px;
+    padding-top: 19px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .page-header__logo {
+    order: 1;
+    padding: 0;
+    text-align: center;
+  }
+
+  .page-header__logo-image {
+    display: block;
+    height: 74px;
+    width: 152px;
+    padding-left: 73px;
+  }
+
+  .page-header::before {
+    position: absolute;
+    content: "";
+    background-color: hsl(0, 0%, 93%);
+    width: 100%;
+    height: 1px;
+    top: 87px;
+    z-index: 1;
+  }
+
+  .page-header__text {
+    padding-right: 50px;
+    padding-top: 0;
+  }
+}
+
