@@ -38,10 +38,6 @@
 }
 
 @media (max-width: $mobile-width-only) {
-  .catalog {
-    margin-top: 80px;
-  }
-
   @media (min-resolution: 2dppx) {
     .catalog__wrapper {
       background-image: url("../img/hero-mobile@2x.jpg");

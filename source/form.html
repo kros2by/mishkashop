@@ -2,9 +2,8 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Мишка</title>
-    <link rel="preload"  href="css/style.css" as="style">
     <link rel="preload" href="fonts/opensans.woff2" as="font">
     <link rel="preload" href="fonts/opensansbold.woff2" as="font">
     <link href="css/style.min.css" type="text/css" rel="stylesheet" />
@@ -26,7 +25,7 @@
               <a class="site-list__link" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link"  href="form.html">Вязание на заказ</a>
+              <a class="site-list__link"  href="#!">Вязание на заказ</a>
             </li>
           </ul>
           <ul class="main-navigation__list user-list">
@@ -59,111 +58,132 @@
         </nav>
       </div>
     </header>
-    <main class="page-main">
-      <h1 class="visually-hidden">Милые штуки ручной работы</h1>
-      <section class="catalog-cards">
-        <div class="catalog-cards__inner">
-          <h2 class="catalog-cards__title">Каталог</h2>
+    <main class="form-container">
+      <h1 class="visually-hidden">Милые штуки ручной работы для дома</h1>
+      <section class="form-catalog">
+        <div class="form-catalog__inner">
+          <h2 class="form-catalog__title">Вязание на заказ</h2>
         </div>
-        <div class="catalog-cards__wrapper">
-          <ul class="catalog-cards__list">
-            <li class="catalog-card">
-              <a class="catalog-card__link" href="#!">
-                <picture>
-                  <source media="(min-width: 1150px)" srcset="img/cards/photo-1-desktop.jpg, img/cards/photo-1-desktopx2.jpg 2x" />
-                  <source media="(min-width: 768px" srcset="img/cards/photo-1-tablet.jpg, img/cards/photo-1-tabletx2.jpg 2x" />
-                  <img class="catalog-card__image" src="img/cards/photo-1.jpg" srcset="img/cards/photo-1x2.jpg 2x" width="260" height="195" alt="Зайчик-попрыгайчик" />
-                </picture>
-              </a>
-              <div class="catalog-card__wrapper">
-                <a class="catalog-card__link-name" href="#!">
-                  <h3 class="catalog-card__product-name">Зайчик-попрыгайчик</h3>
-                </a>
-                <span class="catalog-card__data">Рост 30 см, вес 200 г</span>
-                <div class="catalog-card__inner">
-                  <b class="catalog-card__price">1 200 руб.</b>
-                  <a class="catalog-card__basket" href="#!">
-                    <svg class="catalog-card__item-icon-cart" width="21" height="18" focusable="false" fill="currentColor" viewbox="0 0 21 18" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M20.19 6.86h-3.55L13.19.38c-.2-.38-.61-.48-1.02-.28-.4.19-.5.57-.3.95l3.14 5.8H5.78l3.15-5.8c.2-.38 0-.76-.3-.95A.82.82 0 0 0 7.6.38L4.16 6.86H.8c-.4 0-.81.28-.81.76 0 .38.3.76.81.76h.2l.92 2.86c-.2.1-.3.28-.3.57 0 .38.3.67.7.67L4.06 18h12.88l1.73-5.52c.4 0 .7-.29.7-.67 0-.2-.1-.48-.3-.57L20 8.38h.2c.4 0 .81-.28.81-.76s-.4-.76-.81-.76Zm-4.57 9.62H5.07l-1.21-4.1h13.08l-1.32 4.1Zm1.63-5.53H3.35L2.54 8.3h15.52l-.81 2.66Z" />
-                    </svg>
-                  </a>
-                </div>
+        <p class="form-catalog__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <form class="catalog-filter" action="#!" method="get">
+          <div class="catalog-filter__wrapper catalog-filter__wrapper--radio">
+            <fieldset class="catalog-filter__fieldset">
+              <div class="catalog-filter__divider">
+                <span class="catalog-filter__title">Тип</span>
               </div>
-            </li>
-            <li class="catalog-card">
-              <a class="catalog-card__link" href="#!">
-                <picture>
-                  <source media="(min-width: 1150px)" srcset="img/cards/photo-2-desktop.jpg, img/cards/photo-2-desktopx2.jpg 2x" />
-                  <source media="(min-width: 768px" srcset="img/cards/photo-2-tablet.jpg, img/cards/photo-2-tabletx2.jpg 2x" />
-                  <img class="catalog-card__image" src="img/cards/photo-2.jpg" srcset="img/cards/photo-2x2.jpg 2x" width="260" height="195" alt="Корзинка для белья" />
-                </picture>
-              </a>
-              <div class="catalog-card__wrapper">
-                <a class="catalog-card__link-name" href="#!">
-                  <h3 class="catalog-card__product-name">Корзинка для белья</h3>
-                </a>
-                <span class="catalog-card__data">Диаметр 15 см, высота 10 см</span>
-                <div class="catalog-card__inner">
-                  <b class="catalog-card__price">690 руб.</b>
-                  <a class="catalog-card__basket" href="#!">
-                    <svg class="catalog-card__item-icon-cart" width="21" height="18" focusable="false" fill="currentColor" viewbox="0 0 21 18" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M20.19 6.86h-3.55L13.19.38c-.2-.38-.61-.48-1.02-.28-.4.19-.5.57-.3.95l3.14 5.8H5.78l3.15-5.8c.2-.38 0-.76-.3-.95A.82.82 0 0 0 7.6.38L4.16 6.86H.8c-.4 0-.81.28-.81.76 0 .38.3.76.81.76h.2l.92 2.86c-.2.1-.3.28-.3.57 0 .38.3.67.7.67L4.06 18h12.88l1.73-5.52c.4 0 .7-.29.7-.67 0-.2-.1-.48-.3-.57L20 8.38h.2c.4 0 .81-.28.81-.76s-.4-.76-.81-.76Zm-4.57 9.62H5.07l-1.21-4.1h13.08l-1.32 4.1Zm1.63-5.53H3.35L2.54 8.3h15.52l-.81 2.66Z" />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </li>
-            <li class="catalog-card">
-              <a class="catalog-card__link" href="#!">
-                <picture>
-                  <source media="(min-width: 1150px)" srcset="img/cards/photo-3-desktop.jpg, img/cards/photo-3-desktopx2.jpg 2x" />
-                  <source media="(min-width: 768px" srcset="img/cards/photo-3-tablet.jpg, img/cards/photo-3-tabletx2.jpg 2x" />
-                  <img class="catalog-card__image" src="img/cards/photo-3.jpg" srcset="img/cards/photo-3x2.jpg 2x" width="260" height="195" alt="Большая корзинка для игрушек" />
-                </picture>
-              </a>
-              <div class="catalog-card__wrapper">
-                <a class="catalog-card__link-name" href="#!">
-                  <h3 class="catalog-card__product-name">Большая корзинка для игрушек</h3>
-                </a>
-                <span class="catalog-card__data">Диаметр 30 см, высота 30 см</span>
-                <div class="catalog-card__inner">
-                  <b class="catalog-card__price">1 500 руб.</b>
-                  <a class="catalog-card__basket" href="#!">
-                    <svg class="catalog-card__item-icon-cart" width="21" height="18" focusable="false" fill="currentColor" viewbox="0 0 21 18" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M20.19 6.86h-3.55L13.19.38c-.2-.38-.61-.48-1.02-.28-.4.19-.5.57-.3.95l3.14 5.8H5.78l3.15-5.8c.2-.38 0-.76-.3-.95A.82.82 0 0 0 7.6.38L4.16 6.86H.8c-.4 0-.81.28-.81.76 0 .38.3.76.81.76h.2l.92 2.86c-.2.1-.3.28-.3.57 0 .38.3.67.7.67L4.06 18h12.88l1.73-5.52c.4 0 .7-.29.7-.67 0-.2-.1-.48-.3-.57L20 8.38h.2c.4 0 .81-.28.81-.76s-.4-.76-.81-.76Zm-4.57 9.62H5.07l-1.21-4.1h13.08l-1.32 4.1Zm1.63-5.53H3.35L2.54 8.3h15.52l-.81 2.66Z" />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </li>
-          </ul>
-          <div class="production">
-            <div class="production__inner">
-              <svg class="production__icon" width="52" height="22" viewbox="0 0 52 22" focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="m26 10 6-4v16l-6-4v-8Zm-2 0v8c0 2.2-1.8 4-4 4H4c-2.2 0-4-1.8-4-4v-8c0-2.2 1.8-4 4-4h10c0-1.1.9-2 2-2V2H5c-.6 0-1-.4-1-1s.4-1 1-1h12c.6 0 1 .4 1 1v3a2 2 0 0 1 2 2c2.2 0 4 1.8 4 4Zm-12 0H4v8h8v-8Zm8 1c0-.6-.4-1-1-1h-4c-.6 0-1 .4-1 1s.4 1 1 1h4c.6 0 1-.4 1-1Z" fill="#63D1BB" />
-              </svg>
-              <h3 class="production__product-name">Процесс производства</h3>
-            </div>
-            <div class="production__video">
-              <picture>
-                <source media="(min-width: 1150px)" srcset="img/cards/video-desktop.jpg, img/cards/video-desktopx2.jpg 2x" />
-                <source media="(min-width: 768px)" srcset="img/cards/video-tablet.jpg, img/cards/video-tabletx2.jpg 2x" />
-                <img class="production__image" src="img/cards/video-media.jpg" srcset="img/cards/video-mediax2.jpg 2x" width="260" height="150" alt="видео демонстрация" />
-              </picture>
-              <button class="production__video-button" aria-label="кнопка воспроизвести" type="button">
-                <svg class="production__video-icon" width="101" height="77" viewBox="0 0 101 77" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M97.0001 18.1C97.0001 18.1 96.1001 11.1 93.2001 7.99997C89.6001 3.99997 85.5001 3.89995 83.7001 3.69995C70.4001 2.69995 50.4001 2.69995 50.4001 2.69995H50.3001C50.3001 2.69995 30.3001 2.69995 17.0001 3.69995C15.1001 3.89995 11.1001 3.99997 7.50011 7.99997C4.70011 11.1 3.7001 18.1 3.7001 18.1C3.7001 18.1 2.80011 26.3 2.80011 34.5V42.2C2.80011 50.4 3.7001 58.6 3.7001 58.6C3.7001 58.6 4.60011 65.6 7.50011 68.7C11.1001 72.7 15.9001 72.6 18.0001 73C25.6001 73.8 50.4001 74 50.4001 74C50.4001 74 70.4001 74 83.7001 73C85.6001 72.8 89.6001 72.7 93.2001 68.7C96.0001 65.6 97.0001 58.6 97.0001 58.6C97.0001 58.6 97.9001 50.4 97.9001 42.2V34.5C97.9001 26.3 97.0001 18.1 97.0001 18.1Z" fill="#63D1BB"/>
-                  <path d="M50.3001 76.8C49.3001 76.8 25.3001 76.5 17.7001 75.8H17.6001H17.5001C17.2001 75.7 16.8001 75.7 16.4001 75.6C13.9001 75.3 9.2001 74.7 5.6001 70.6C2.2001 67 1.2001 59.8 1.1001 59C1.1001 58.7 0.100098 50.5 0.100098 42.3V34.6C0.100098 26.3 1.00011 18.2 1.00011 17.9V17.8C1.10011 17 2.20011 9.89998 5.50011 6.19998C9.50011 1.79998 14.0001 1.30001 16.2001 1.10001C16.4001 1.10001 16.6001 1.1 16.7001 1H16.8001C30.1001 0 50.1001 0 50.3001 0H50.4001C50.6001 0 70.6001 0 83.9001 1H84.0001C84.2001 1 84.3001 1.00001 84.5001 1.10001C86.7001 1.30001 91.2001 1.79998 95.2001 6.19998C98.6001 9.79998 99.6001 17 99.7001 17.8C99.7001 18.1 100.7 26.3 100.7 34.6V42.3C100.7 50.6 99.8001 58.7 99.7001 59V59.1C99.6001 59.9 98.5001 67.1 95.2001 70.7C91.2001 75.1 86.7001 75.6 84.5001 75.8C84.3001 75.8 84.1001 75.8 84.0001 75.9H83.9001C70.6001 76.8 50.5001 76.8 50.3001 76.8ZM18.4001 70.4C25.9001 71.1 49.6001 71.4 50.4001 71.4C51.1001 71.4 70.5001 71.4 83.4001 70.4C83.6001 70.4 83.8001 70.4 84.0001 70.3C85.8001 70.1 88.6001 69.8 91.2001 67C93.0001 65 94.1001 60.1 94.3001 58.4C94.4001 57.9 95.2001 50 95.2001 42.3V34.6C95.2001 26.8 94.3001 19 94.2001 18.5C93.9001 16.1 92.8001 11.7 91.1001 10C88.5001 7.1 85.7001 6.89998 83.9001 6.69998C83.7001 6.69998 83.5001 6.70001 83.3001 6.60001C70.2001 5.60001 50.5001 5.60001 50.3001 5.60001H50.2001C50.0001 5.60001 30.2001 5.60001 17.2001 6.60001C17.0001 6.60001 16.8001 6.59998 16.6001 6.69998C14.8001 6.89998 12.0001 7.2 9.40012 10C7.60012 12 6.50011 16.9 6.30011 18.6C6.20011 19.2 5.4001 27 5.4001 34.7V42.4C5.4001 50.1 6.30011 58 6.30011 58.5C6.60011 60.9 7.70012 65.3 9.40012 67C11.7001 69.6 14.7001 70 16.9001 70.3C17.5001 70.2 17.9001 70.3 18.4001 70.4Z" fill="white"/>
-                  <path d="M38.4004 20.5V56.2L68.2004 38.4L38.4004 20.5Z" fill="white"/>
-                  </svg>
-              </button>
-            </div>
-            <div class="production__inner-description">
-              <p class="production__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-              <a class="production__form-link" href="#!">сделать заказ</a>
-            </div>
+              <ul class="catalog-filter__list">
+                <li class="catalog-filter__item">
+                  <label class="catalog-filter__radio">
+                  <input class="catalog-filter__control-input visually-hidden" type="radio" name="type" value="accessories" checked="checked" /> <span class="catalog-filter__control-mark"></span>
+                  <span class="catalog-filter__control-label">Аксессуар для интерьера</span>
+                  </label>
+                </li>
+                <li class="catalog-filter__item">
+                  <label class="catalog-filter__radio">
+                  <input class="catalog-filter__control-input visually-hidden" type="radio" name="type" value="toy" /> <span class="catalog-filter__control-mark"></span>
+                  <span class="catalog-filter__control-label">Детская игрушка</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
           </div>
-        </div>
+          <div class="catalog-filter__wrapper catalog-filter__wrapper--chekbox">
+            <fieldset class="catalog-filter__fieldset">
+              <div class="catalog-filter__divider">
+                <span class="catalog-filter__title">Цвет</span>
+              </div>
+              <ul class="catalog-filter__list">
+                <li class="catalog-filter__item">
+                  <label class="catalog-filter__chekbox">
+                    <input class="catalog-filter__control-input visually-hidden" type="checkbox" name="Серый" checked="checked" /> <span class="catalog-filter__control-mark"></span>
+                    <span class="catalog-filter__control-label">Серый</span>
+                  </label>
+                </li>
+                <li class="catalog-filter__item">
+                  <label class="catalog-filter__chekbox">
+                    <input class="catalog-filter__control-input visually-hidden" type="checkbox" name="Тиффани" /> <span class="catalog-filter__control-mark"></span>
+                    <span class="catalog-filter__control-label">Тиффани</span>
+                  </label>
+                </li>
+                <li class="catalog-filter__item">
+                  <label class="catalog-filter__chekbox">
+                    <input class="catalog-filter__control-input visually-hidden" type="checkbox" name="Черный" /> <span class="catalog-filter__control-mark"></span>
+                    <span class="catalog-filter__control-label">Черный</span>
+                  </label>
+                </li>
+                <li class="catalog-filter__item">
+                  <label class="catalog-filter__chekbox">
+                    <input class="catalog-filter__control-input visually-hidden" type="checkbox" name="Розовый" /> <span class="catalog-filter__control-mark"></span>
+                    <span class="catalog-filter__control-label">Розовый</span>
+                  </label>
+                </li>
+                <li class="catalog-filter__item">
+                  <label class="catalog-filter__chekbox">
+                  <input class="catalog-filter__control-input visually-hidden" type="checkbox" name="Оранжевый" /> <span class="catalog-filter__control-mark"></span>
+                  <span class="catalog-filter__control-label">Оранжевый</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="catalog-filter__wrapper">
+            <fieldset class="catalog-filter__fieldset">
+              <div class="catalog-filter__divider">
+                <span class="catalog-filter__title">ФИО</span>
+              </div>
+              <div class="catalog-filter__name">
+                <label class="catalog-filter__label" for="catalog-filter__name">Имя:</label>
+                <input class="catalog-filter__name-input" type="text" id="catalog-filter__name" name="name" placeholder="Введите ваше имя*" required />
+              </div>
+              <div class="catalog-filter__surname">
+                <label class="catalog-filter__label" for="catalog-filter__surname">Фамилия:</label>
+                <input class="catalog-filter__surname-input" type="text" id="catalog-filter__surname" name="surname" placeholder="Укажите фамилию*" required />
+              </div>
+              <div class="catalog-filter__patronymic">
+                <label class="catalog-filter__label" for="catalog-filter__patronymic">Отчество:</label>
+                <input class="catalog-filter__patronymic-input" type="text" id="catalog-filter__patronymic" name="patronymic" placeholder="Отчество, если желаете" />
+              </div>
+            </fieldset>
+          </div>
+          <div class="catalog-filter__wrapper catalog-filter__wrapper--data">
+            <fieldset class="catalog-filter__fieldset">
+              <div class="catalog-filter__divider">
+                <label class="catalog-filter__title" for="catalog-filter__phone-number">Тел</label>
+              </div>
+              <div class="catalog-filter__phone-number">
+                <input class="catalog-filter__phone-number-input" type="tel" id="catalog-filter__phone-number" name="номер телефона" placeholder="+7 ХХХ ХХХ ХХ ХХ*" />
+                <svg viewbox="0 0 25 24" class="catalog-filter__phone-icon" width="25" height="24" focusable="false" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.44 24h-1.1a17.63 17.63 0 0 1-11.2-5.73A18.8 18.8 0 0 1 0 6.72V5.33c.1-.89.5-1.48 1.1-2.07.61-.7 1.62-1.48 2.53-1.58.7 0 1.81.5 2.22 1.09.4.49.6 1.58.8 2.37.2.88.6 1.97.5 2.76-.2 1.19-1.8 1.68-2.21 2.57a16.4 16.4 0 0 0 7.56 8.2c.8-.5 1.61-1.88 2.82-1.88.4 0 1.01.2 1.41.3.5.1.91.3 1.31.49.71.3 2.02.6 2.42 1.19.4.59.7 1.58.6 2.17-.3 1.28-2.41 2.66-3.62 3.06ZM12.6 1.48A10.8 10.8 0 0 1 23.5 12.15H25C25 5.43 19.46 0 12.6 0v1.48Z" />
+                    <path d="M12.6 9.19v1.58c.8 0 1.41.59 1.41 1.38h1.62a3 3 0 0 0-3.03-2.96ZM12.6 6.12a6.11 6.11 0 0 1 6.15 6.03h1.61c0-4.15-3.42-7.5-7.66-7.5v1.47h-.1Z" />
+                </svg>
+              </div>
+            </fieldset>
+            <fieldset class="catalog-filter__fieldset">
+              <div class="catalog-filter__divider">
+                <label class="catalog-filter__title" for="catalog-filter__email-text">E-mail</label>
+              </div>
+              <div class="catalog-filter__email-text">
+                <input class="catalog-filter__email-text-input" type="email" id="catalog-filter__email-text" name="электронная почта" placeholder="Ваш Email" />
+                <svg class="catalog-filter__email-text-icon" width="32" height="21" viewBox="0 0 32 21" focusable="false" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M28 0H4C1.8 0 0 1.8 0 4v13c0 2.2 1.8 4 4 4h24c2.2 0 4-1.8 4-4V4c0-2.2-1.8-4-4-4ZM2 5.3l7 5.3-7 5.3V5.3ZM30 17a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2l7.8-5.9 4.4 3.3a3 3 0 0 0 3.6 0l4.4-3.3L30 17Zm0-1.2-7-5.3 7-5.3v10.6Zm-12.8-2.2c-.4.3-.8.4-1.2.4-.4 0-.9-.1-1.2-.4l-4.1-3.1-.8-.6L2 4c0-1.1.9-2 2-2h24a2 2 0 0 1 2 2l-12.8 9.6Z" />
+                </svg>
+              </div>
+            </fieldset>
+          </div>
+          <div class="catalog-filter__wrapper catalog-filter__wrapper--message">
+            <fieldset class="catalog-filter__fieldset">
+              <div class="catalog-filter__divider">
+                <span class="catalog-filter__title">Доп</span>
+              </div>
+              <div class="catalog-filter__message-text-wrapper">
+                <textarea class="catalog-filter__message-text" name="message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              </div>
+            </fieldset>
+          </div>
+          <div class="catalog-filter__super-wrapper">
+            <div class="catalog-filter__inner"><span class="catalog-filter__require">*Поля обязательны для заполнения</span> <button class="catalog-filter__button" type="submit">отправить заказ</button></div>
+          </div>
+        </form>
       </section>
     </main>
     <footer class="page-footer">
@@ -206,35 +226,6 @@
         </div>
       </div>
     </footer>
-    <div class="modal modal--close">
-      <div class="modal__wrapper">
-        <section class="modal__content">
-          <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
-          <form class="form-basket" action="#!" method="post">
-            <fieldset class="form-basket__fieldset">
-              <legend class="form-basket__legend">Выберите размер:</legend>
-              <ul class="form-basket__list">
-                <li class="form-basket__item">
-                  <input class="form-basket__input visually-hidden" type="radio" id="size-s" name="size" value="small" checked="checked" />
-                  <label class="form-basket__button-size form-basket__button-size--active" for="size-s">S</label>
-                </li>
-                <li class="form-basket__item">
-                  <input class="form-basket__input visually-hidden" type="radio" id="size-m" name="size" value="medium" />
-                  <label class="form-basket__button-size" for="size-m">M</label>
-                </li>
-                <li class="form-basket__item">
-                  <input class="form-basket__input visually-hidden" type="radio" id="size-l" name="size" value="large" />
-                  <label class="form-basket__button-size" for="size-l">L</label>
-                </li>
-              </ul>
-            </fieldset>
-            <div class="form-basket__wrapper">
-              <button class="form-basket__button" type="submit">Добавить</button>
-            </div>
-          </form>
-        </section>
-      </div>
-    </div>
     <script src="js/script.js"></script>
   </body>
 </html>
